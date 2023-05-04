@@ -1,0 +1,17 @@
+<ul class="list">
+    <li *ngFor="let car of cars" (click)="show(car)">
+       {{car.name}}
+      
+    </li>
+   </ul>
+   <ul>
+    <div *ngIf="shows">
+        
+        <p>{{shows.type }}</p>
+        <p>{{shows.model}}</p>
+        <p>{{shows.yom }}</p>
+
+      </div>
+    
+   
+    
