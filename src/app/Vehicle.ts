@@ -3,5 +3,5 @@ export interface Vehicle {
     id: number,
     model: string,
     type: string,
-    yom: string
+    yearOfManufacture: string
 }

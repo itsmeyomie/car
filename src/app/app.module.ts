@@ -6,13 +6,15 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { CarsComponent } from './cars/cars.component'; 
+import { CarsComponent } from './cars/cars.component';
+import { CarComponent } from './car/car.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CarsComponent
+    CarsComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,

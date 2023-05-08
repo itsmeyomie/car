@@ -1,0 +1,23 @@
+<div   (click)="show(car)">
+    <ul>
+
+        <h2> {{car.name}} </h2>
+
+
+    </ul>
+
+
+</div>
+
+<div  *ngIf="shows" >
+     <ul> 
+        
+            <p> {{shows.model}}</p> 
+            <p> {{shows.type}}</p> 
+            <p> {{shows.yearOfManufacture}}</p> 
+          
+        
+     </ul>
+     <button style="color: blue;">buy</button>
+
+</div>

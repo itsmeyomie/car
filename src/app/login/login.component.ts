@@ -10,25 +10,29 @@ export class LoginComponent {
   password: string = "";
   show: boolean = false;
   login: boolean = true;
-  @Output() loginSuccess = new EventEmitter<void>();
+
+  @Output() isLoggedIn = new EventEmitter<boolean>();
 
   
   submit() {
-    console.log("user name is " + this.username)
+    
     this.checkPass();
     this.clear();
-    this.loginSuccess.emit();
+    this.isLoggedIn.emit();
+ 
 
   }
   clear() {
     this.username = "";
     this.password = "";
+    
   }
 
   checkPass() {
-    if (this.password == "admin") {
+    if (this.password === "admin") {
       this.show = true;
     }
+    
   }
   
 

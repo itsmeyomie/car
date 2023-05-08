@@ -1,4 +1,4 @@
-<ul class="list">
+<!-- <ul class="list">
     <li *ngFor="let car of cars" (click)="show(car)">
        {{car.name}}
       
@@ -9,9 +9,9 @@
         
         <p>{{shows.type }}</p>
         <p>{{shows.model}}</p>
-        <p>{{shows.yom }}</p>
+        <p>{{shows.yearOfManufacture }}</p>
          <button>buy</button>
-      </div>
+      </div> -->
     
    
-    
+      <app-car *ngFor="let car of cars" [car]="car"> </app-car>

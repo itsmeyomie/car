@@ -1,12 +1,10 @@
-
-
-
 <div *ngIf="!isLoggedIn">
-    <app-login (loginSuccess)="onLoginSuccess()"></app-login>
-   
-  </div>
-  <div *ngIf="isLoggedIn">
-    <h1>Zero-Orbit-Delearship</h1>
-   <h2>choose a vehicle</h2>
-    <app-cars></app-cars>
-  </div>
+  <app-login (isLoggedIn)="onLoginSuccess()"></app-login>
+
+</div>
+<div *ngIf="isLoggedIn">
+  <h1>Zero-Orbit-Delearship</h1>
+  <h2>choose a vehicle</h2>
+
+  <app-cars></app-cars>
+</div>
