@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component'; 
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CarComponent } from './car/car.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

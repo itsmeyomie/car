@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,27 +14,30 @@ export class LoginComponent {
 
   @Output() isLoggedIn = new EventEmitter<boolean>();
 
+  constructor(private router: Router) {}
+   
+
+
+  
   
   submit() {
     
     this.checkPass();
-    this.clear();
+ 
     this.isLoggedIn.emit();
  
 
   }
-  clear() {
-    this.username = "";
-    this.password = "";
-    
-  }
-
-  checkPass() {
-    if (this.password === "admin") {
-      this.show = true;
-    }
-    
-  }
   
 
+  checkPass() {
+    if (this.password === "admin" && this.username==="yomie") {
+      this.router.navigate(['cars'])
+     
+    }
+   
+  }
+
 }
+
+
