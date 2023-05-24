@@ -10,13 +10,15 @@ import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component'; 
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { CarRoutingModule } from './car-routing/car-routing.module';
+import { CarModule } from './car/car.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CarsComponent,
-    CarComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,9 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     MatFormFieldModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Vehicle } from '../Vehicle';
 import { cars } from '../vehicles';
 
@@ -8,7 +8,25 @@ import { cars } from '../vehicles';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent {
-  cars: Vehicle[] = cars;
+ 
+  carz: Vehicle[]=cars;
+
+
+
+
+
+
+
+
+
+check(){
+  
+}
+
+
+
+
+
 }
 
 

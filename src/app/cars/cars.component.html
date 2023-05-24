@@ -1,3 +1,13 @@
+<h1>Available Cars</h1>
+<!-- <app-car></app-car> -->
 
-   
-      <app-car *ngFor="let car of cars" [car]="car"> </app-car>
+<div>
+
+</div>
+
+
+      <ul *ngFor="let car of carz">
+        <li>
+            <a [routerLink]="['car/',car.id]" >{{car.name}}</a>
+       </li>
+      </ul>
