@@ -1,11 +1,5 @@
 <h1>Available Cars</h1>
 
-
-<div>
-
-</div>
-
-
       <ul *ngFor="let car of carz">
         <li>
             <a [routerLink]="['/cars',car.id]" >{{car.name}}</a>
