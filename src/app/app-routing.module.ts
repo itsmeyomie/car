@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'cars',loadChildren:()=>import('./car/car.module').then(carModule=>carModule.CarModule)},
-  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'',redirectTo:'cars',pathMatch:'full'},
   { path: '**', component:PageNotFoundComponent },
   
 
