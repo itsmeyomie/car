@@ -7,18 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CarsComponent } from './cars/cars.component';
-import { CarComponent } from './car/car.component'; 
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { CarRoutingModule } from './car-routing/car-routing.module';
 import { CarModule } from './car/car.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CarsComponent,
-   
   ],
   imports: [
     BrowserModule,
@@ -27,8 +23,7 @@ import { CarModule } from './car/car.module';
     MatFormFieldModule,
     RouterModule,
     AppRoutingModule,
-    CarModule
-    
+    CarModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

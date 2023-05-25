@@ -1,5 +1,5 @@
 <h1>Available Cars</h1>
-<!-- <app-car></app-car> -->
+
 
 <div>
 
@@ -8,6 +8,6 @@
 
       <ul *ngFor="let car of carz">
         <li>
-            <a [routerLink]="['car/',car.id]" >{{car.name}}</a>
+            <a [routerLink]="['/cars',car.id]" >{{car.name}}</a>
        </li>
       </ul>

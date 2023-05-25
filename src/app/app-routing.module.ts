@@ -6,9 +6,8 @@ import { CarComponent } from './car/car.component';
 
 
 const routes: Routes = [
- 
-  { path: 'car',loadChildren:()=>import('./car/car.module').then(carModule=>carModule.CarModule)},
   { path: 'login', component: LoginComponent },
+  { path: 'cars',loadChildren:()=>import('./car/car.module').then(carModule=>carModule.CarModule)},
   { path: '', redirectTo: 'cars', pathMatch: 'full' },
 ];
 

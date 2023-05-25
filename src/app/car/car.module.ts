@@ -6,15 +6,16 @@ import { CarsComponent } from '../cars/cars.component';
 
 
 
+
 @NgModule({
   declarations: [
     CarComponent,
+    CarsComponent
    
   ],
   imports: [
     CommonModule,
     CarRoutingModule
-
-  ]
+    ]
 })
 export class CarModule { }

@@ -6,11 +6,11 @@ import { CarComponent } from '../car/car.component';
 
 
 const routes:Routes=[{
-path:'cars',
+path:'',
 component:CarsComponent
 },
 {
-  path:'cars/car/:id',
+  path:':id',
   component:CarComponent
 }
 
